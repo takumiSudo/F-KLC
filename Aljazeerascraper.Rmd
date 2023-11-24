@@ -203,3 +203,9 @@ article_texts <- map(article_urls$link, retrieve_text, .progress=TRUE) |>
 # combine into one dataframe
 articles <- inner_join(article_urls, article_texts, join_by(link))
 ```
+
+# Write results to csv
+
+```{r}
+write.csv(your_dataframe, "your_file.csv", row.names = FALSE)
+```
