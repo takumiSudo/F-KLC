@@ -1,6 +1,14 @@
-# PCDA Project
+# PCDA Group Project
+## Analysing the media coverage of the 2023 Israel-Hamas war
 
-### TODO's
+Luuk Boekestein, Takumi Sudo & Taylan Toker
 
-The basic [scraper](scrapers.Rmd) can now collect the urls from the Al Jazeera homepage and find the article text for each url. However, we need to find a way to scrape also the urls that are hidden beneeth the "Show more" Button.
+## Scrapers
 
+### Al Jazeera
+
+The scraper for Al Jazeera can be found [here](scrapers/Aljazeerascraper.Rmd) under the [scrapers](scrapers) folder.
+
+I scraped all articles in the [Israel-Palestine section of Al Jazeera](https://www.aljazeera.com/tag/israel-palestine-conflict/) from after October 6th 12pm. I excluded the liveblogs, and articles that were in video or audio format. In total I scraped `1036` articles.
+
+The scraped articles can be found [here](data/aljazeera_articles.csv) under [data](data) in csv format.
